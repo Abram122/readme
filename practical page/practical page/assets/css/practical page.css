@@ -1,0 +1,102 @@
+/* x o game  */
+.title{
+    text-align: center;
+    background:rgb(255, 0, 234);
+    color: white;
+    margin:  0 auto;
+    padding: 5px 0;
+    max-width: 450px;
+    font-size: 50px;
+
+}
+
+.game{
+    display: grid;
+    grid-template-columns: repeat(3,150px);
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.game .square{
+    width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+    text-align: center;
+    border: 5px solid rgba(51, 36, 85, 0.133);
+    font-size: 100px;
+    color: white;
+    font-weight: 500;
+}
+
+.game .square:hover{
+    transition: 0.3s ease;
+    background-color: rgb(2, 2, 2);
+    cursor: pointer;
+}
+
+.player{
+    width: 500px;
+    margin: -20px auto 0 auto;
+    padding-bottom: 95px;
+    text-align: center;
+}
+
+.player h1 span{
+    color: green;
+}
+/* x o game  */
+/* calculator */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+ }
+ .all{
+    background-color: #495250;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+ }
+ .main{
+    width: 400px;
+    height: 450px;
+    background-color: white;
+    position: absolute;
+    border: 5px solid black;
+    border-radius: 6px; 
+ }
+ .main input[type='text'] {
+    width: 88%;
+    position: relative;
+    height: 80px;
+    top: 5px;
+    text-align: right;
+    padding: 3px 6px;
+    outline: none;
+    font-size: 40px;
+    border: 5px solid black;
+    display: flex;
+    margin: auto;
+    border-radius: 6px;
+    color: black;
+ }
+ .btn input[type='button']{
+    width:90px;
+    padding: 2px;
+    margin: 2px 0px;
+    position: relative;
+    left: 13px;
+    top: 20px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.5s;
+    background-color: #495250;
+    border-radius: 6px;
+    color: white;
+ }
+ .btn input[type='button']:hover{
+    background-color: black;
+    color: white;
+ }
+ /* calculator */

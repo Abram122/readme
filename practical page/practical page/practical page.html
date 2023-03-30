@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practical page</title>
+    <link rel="stylesheet" href="assets/css/practical page.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-5">Practical page</h1>
+        <p>firstly see the result and try to do it <br> if you didnot do it try again with another example</p>
+        <h4>X O game</h4>
+
+                <!-- X O game  -->
+        <div class="player">
+            <h1 style="float: left;">player 1 <span style="color:red">(O)</span> <br><span id="player1"></span></h1>
+            <h1 style="float: right;">player 2 <span style="color: red;">(X)</span> <br><span id="player2"></span></h1>
+            
+        </div><br>
+        <div class="title">X O Game</div>
+        <div class="game">
+            <div class="square" id="item1" onclick="game(this.id)"></div>
+            <div class="square" id="item2" onclick="game(this.id)"></div>
+            <div class="square" id="item3" onclick="game(this.id)"></div>
+            <div class="square" id="item4" onclick="game(this.id)"></div>
+            <div class="square" id="item5" onclick="game(this.id)"></div>
+            <div class="square" id="item6" onclick="game(this.id)"></div>
+            <div class="square" id="item7" onclick="game(this.id)"></div>
+            <div class="square" id="item8" onclick="game(this.id)"></div>
+            <div class="square" id="item9" onclick="game(this.id)"></div>
+        </div>
+        <!-- X O game  -->
+        <!-- show code of X O game  -->
+        <div class="xocode text-center m-5">
+            <button class="btn btn-dark me-3 mb-5" id="xohtml">HTML</button>
+            <button class="btn btn-dark me-3 mb-5"id="xocss">Css</button>
+            <button class="btn btn-dark mb-5"id="xojs">Javascript</button>
+        
+            <p id="htmltext" style="display: none; transition: 0.3s;">
+                <br>
+                &lt;div class="player"&lt;
+                    &lt;h1 style="float: left;">player 1 &lt;span style="color:red">(O)&lt;span> &lt;br>&lt;span id="player1">&lt;/span>&lt;/h1>
+                    &lt;h1 style="float: right;">player 2 &lt;span style="color: red;">(X)&lt;span> &lt;br>&lt;span id="player2">&lt;/span>&lt;/h1>
+                    
+                    &lt;/div>&lt;br>
+                    &lt;div class="title">X O Game&lt;/div>
+                    &lt;div class="game">
+                    vdiv class="square" id="item1" onclick="game(this.id)">&lt;/div>
+                    &lt;div class="square" id="item2" onclick="game(this.id)">&lt;/div>
+                    &lt;div class="square" id="item3" onclick="game(this.id)">&lt;/div>
+                    &lt;div class="square" id="item4" onclick="game(this.id)">&lt;/div>
+                    &lt;div class="square" id="item5" onclick="game(this.id)">&lt;/div>
+                    &lt;div class="square" id="item6" onclick="game(this.id)">&lt;/div>
+                    &lt;div class="square" id="item7" onclick="game(this.id)">&lt;/div>
+                    &lt;div class="square" id="item8" onclick="game(this.id)">&lt;/div>
+                    &lt;div class="square" id="item9" onclick="game(this.id)">&lt;/div>
+                    &lt;/div>
+                </p>
+                <p id="csstext"style="display: none;">
+                    .title{
+                        text-align: center;
+                        background:rgb(255, 0, 234);
+                        color: white;
+                        margin:  0 auto;
+                        padding: 5px 0;
+                        max-width: 450px;
+                        font-size: 50px;
+                    
+                    }
+                    
+                    .game{
+                        display: grid;
+                        grid-template-columns: repeat(3,150px);
+                        justify-content: center;
+                        margin-top: 10px;
+                    }
+                    
+                    .game .square{
+                        width: 150px;
+                        height: 150px;
+                        background-color: blueviolet;
+                        text-align: center;
+                        border: 5px solid rgba(51, 36, 85, 0.133);
+                        font-size: 100px;
+                        color: white;
+                        font-weight: 500;
+                    }
+                    
+                    .game .square:hover{
+                        transition: 0.3s ease;
+                        background-color: rgb(2, 2, 2);
+                        cursor: pointer;
+                    }
+                    
+                    .player{
+                        width: 500px;
+                        margin: -20px auto 0 auto;
+                        padding-bottom: 95px;
+                        text-align: center;
+                    }
+                    
+                    .player h1 span{
+                        color: green;
+                    }
+                </p>
+                <p id="jstext"style="display: none;">
+                    // X O game 
+let turn = "x"
+let title = document.querySelector('.title')
+let squares = []
+let player1 =document.getElementById('player1')
+let player2 =document.getElementById('player2')
+let divs =document.getElementsByClassName('.square')
+let item1=document.getElementById('item1')
+let item2=document.getElementById('item2')
+let item3=document.getElementById('item3')
+let item4=document.getElementById('item4')
+let item5=document.getElementById('item5')
+let item6=document.getElementById('item6')
+let item7=document.getElementById('item7')
+let item8=document.getElementById('item8')
+let item9=document.getElementById('item9')
+let x=0
+let y = 0
+
+function increase(){
+    if(title.innerHTML[0] == 'O'){
+        player1.innerHTML= ++x
+    }
+    else{
+        player2.innerHTML=++y
+    }
+}
+
+function winner(n1, n2, n3) {
+    document.getElementById(`item` + n2).style.background = "green"
+    document.getElementById(`item` + n1).style.background = "green"
+    document.getElementById(`item` + n3).style.background = "green"
+    title.innerHTML = `${squares[n1]} is the winner`
+    setTimeout(function () {
+        item1.innerHTML=''
+        item2.innerHTML=''
+        item3.innerHTML=''
+        item4.innerHTML=''
+        item5.innerHTML=''
+        item6.innerHTML=''
+        item7.innerHTML=''
+        item8.innerHTML=''
+        item9.innerHTML=''
+        item1.style.background="blueviolet"
+        item2.style.background="blueviolet"
+        item3.style.background="blueviolet"
+        item4.style.background="blueviolet"
+        item5.style.background="blueviolet"
+        item6.style.background="blueviolet"
+        item7.style.background="blueviolet"
+        item8.style.background="blueviolet"
+        item9.style.background="blueviolet"
+        title.innerHTML='X O Game'
+        
+
+    }, 2000)
+
+
+}
+
+function clear(){
+    title.innerHTML="draw match"
+    setInterval(function () {
+        title.innerHTML += '.'
+    }, 500)
+    setTimeout(function () {
+        location.reload()
+    }, 2000)
+
+}
+function final() {
+    for (let i = 1; i < 10; i++) {
+        squares[i] = document.getElementById(`item${i}`).innerHTML
+    }
+    // o winneX
+    if (squares[1] == squares[2] && squares[2] == squares[3] && squares[3] != '') {
+        winner(1, 2, 3)
+        increase()
+    }
+    else if (squares[4] == squares[5] && squares[6] == squares[4] && squares[4] != '') {
+        winner(4, 5, 6)
+        increase()
+
+    }
+    else if (squares[7] == squares[8] && squares[9] == squares[7] && squares[8] != '') {
+        winner(7, 8, 9)
+        increase()
+
+    }
+    else if (squares[1] == squares[5] && squares[5] == squares[9] && squares[5] != '') {
+        winner(1, 5, 9)
+        increase()
+
+    }
+    else if (squares[3] == squares[5] && squares[5] == squares[7] && squares[5] != '') {
+        winner(3, 5, 7)
+        increase()
+
+    }
+    else if (squares[3] == squares[6] && squares[6] == squares[9] && squares[9] != '') {
+        winner(3, 6, 9)
+        increase()
+
+    }
+    else if (squares[1] == squares[4] && squares[4] == squares[7] && squares[7] != '') {
+        winner(1, 4, 7)
+        increase()
+
+    }
+    else if (squares[2] == squares[5] && squares[5] == squares[8] && squares[5] != '') {
+        winner(2, 5, 8)
+        increase()
+
+    } 
+    else if(squares[1] != '' && squares[2] !='' && squares[3]!=''&& squares[4]!='' && squares[5] !='' && squares[6]!='' && squares[7]!=''&&squares[8]!=''&&squares[9]!=''){
+        clear()
+    }
+}
+function game(id) {
+    let tag = document.getElementById(id)
+    if (turn == "x" && tag.innerHTML == '') {
+        tag.innerHTML = "X"
+        turn = "o"
+        title.innerHTML = "O"
+    }
+    else if (turn == "o" && tag.innerHTML == '') {
+        tag.innerHTML = "O"
+        turn = "x"
+        title.innerHTML = "X"
+    }
+    final()
+}
+// X O game 
+</p>
+</div>
+
+        <!-- show code of X O game  -->
+        
+        <!-- calculator -->
+        <div class="all">
+            <h3 class="text-center">calculator</h3>
+            <div class="main" style="width: 450PX;">
+                <input type="text" id = 'res'>
+                <div class="btn">
+                    <input type="button" value = 'C' onclick = "Clear()">
+                    <input type="button" value = '%' onclick = "Solve('%')">
+                    <input type="button" value = '←' onclick ="Back('←')">
+                    <input type="button" value = '/' onclick = "Solve('/')">
+                    <br>
+                    <input type="button" value = '7' onclick = "Solve('7')">
+                    <input type="button" value = '8' onclick = "Solve('8')">
+                    <input type="button" value = '9' onclick = "Solve('9')">
+                    <input type="button" value = 'x' onclick = "Solve('*')">
+                    <br>
+                    <input type="button" value = '4' onclick = "Solve('4')">
+                    <input type="button" value = '5' onclick = "Solve('5')">
+                    <input type="button" value = '6' onclick = "Solve('6')">
+                    <input type="button" value = '-' onclick = "Solve('-')">
+                    <br>
+                    <input type="button" value = '1' onclick = "Solve('1')">
+                    <input type="button" value = '2' onclick = "Solve('2')">
+                    <input type="button" value = '3' onclick = "Solve('3')">
+                    <input type="button" value = '+' onclick = "Solve('+')">
+                    <br>
+                    <input type="button" value = '00'onclick = "Solve('00')">
+                    <input type="button" value = '0' onclick = "Solve('0')">
+                    <input type="button" value = '.' onclick = "Solve('.')">
+                    <input type="button" value = '=' onclick = "Result()"  >
+                </div>
+            </div>
+        </div>
+        <!-- calculator -->
+        
+
+
+
+
+        <div class="xocode text-center m-5">
+            <button class="btn btn-dark me-3 mb-5" id="xohtml1">HTML</button>
+            <button class="btn btn-dark me-3 mb-5"id="xocss1">Css</button>
+            <button class="btn btn-dark mb-5"id="xojs1">Javascript</button>
+        
+            <p id="htmltext1" style="display: none; transition: 0.3s;">
+                <br>
+                &lt;div class="all">
+                    &lt;h3 class="text-center">calculator &lt;/h3>
+                    &lt;div class="main" style="width: 450PX;">
+                    &lt;input type="text" id = 'res'>
+                    &lt;div class="btn">
+                    &lt;input type="button" value = 'C' onclick = "Clear()">
+                    &lt;input type="button" value = '%' onclick = "Solve('%')">
+                    &lt;input type="button" value = '←' onclick ="Back('←')">
+                    &lt;input type="button" value = '/' onclick = "Solve('/')">
+                    &lt;br>
+                    &lt;input type="button" value = '7' onclick = "Solve('7')">
+                    &lt;input type="button" value = '8' onclick = "Solve('8')">
+                    &lt;input type="button" value = '9' onclick = "Solve('9')">
+                    &lt;input type="button" value = 'x' onclick = "Solve('*')">
+                    &lt;br>
+                    &lt;input type="button" value = '4' onclick = "Solve('4')">
+                    &lt;input type="button" value = '5' onclick = "Solve('5')">
+                    &lt;input type="button" value = '6' onclick = "Solve('6')">
+                    &lt;input type="button" value = '-' onclick = "Solve('-')">
+                    &lt;br>
+                    &lt;input type="button" value = '1' onclick = "Solve('1')">
+                    &lt;input type="button" value = '2' onclick = "Solve('2')">
+                    &lt;input type="button" value = '3' onclick = "Solve('3')">
+                    &lt;input type="button" value = '+' onclick = "Solve('+')">
+                    &lt;br>
+                    &lt;input type="button" value = '00'onclick = "Solve('00')">
+                    &lt;input type="button" value = '0' onclick = "Solve('0')">
+                    &lt;input type="button" value = '.' onclick = "Solve('.')">
+                    &lt;input type="button" value = '=' onclick = "Result()">
+                    &lt;/div>
+                    &lt;/div>
+                    &lt;/div>
+                </p>
+                <p id="csstext1"style="display: none;">
+                    body{
+                        background-color: #495250;
+                        display: grid;
+                        height: 100vh;
+                        place-items: center;
+                     }
+                     .main{
+                        width: 400px;
+                        height: 450px;
+                        background-color: white;
+                        position: absolute;
+                        border: 5px solid black;
+                        border-radius: 6px; 
+                     }
+                     .main input[type='text'] {
+                        width: 88%;
+                        position: relative;
+                        height: 80px;
+                        top: 5px;
+                        text-align: right;
+                        padding: 3px 6px;
+                        outline: none;
+                        font-size: 40px;
+                        border: 5px solid black;
+                        display: flex;
+                        margin: auto;
+                        border-radius: 6px;
+                        color: black;
+                     }
+                     .btn input[type='button']{
+                        width:90px;
+                        padding: 2px;
+                        margin: 2px 0px;
+                        position: relative;
+                        left: 13px;
+                        top: 20px;
+                        height: 60px;
+                        cursor: pointer;
+                        font-size: 18px;
+                        transition: 0.5s;
+                        background-color: #495250;
+                        border-radius: 6px;
+                        color: white;
+                     }
+                     .btn input[type='button']:hover{
+                        background-color: black;
+                        color: white;
+                     }
+                </p>
+                <p id="jstext1"style="display: none;">
+                        function Solve(val) {
+                            var v = document.getElementById('res');
+                            v.value += val;
+                         }
+                         function Result() {
+                            var num1 = document.getElementById('res').value;
+                            var num2 = eval(num1);
+                            document.getElementById('res').value = num2;
+                         }
+                         function Clear() {
+                            var inp = document.getElementById('res');
+                            inp.value = '';
+                         }
+                         function Back() {
+                            var ev = document.getElementById('res');
+                            ev.value = ev.value.slice(0,-1);
+                         }
+</p>
+</div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/practical page.js"></script>
+</body>
+</html>
