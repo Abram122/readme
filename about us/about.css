@@ -1,0 +1,197 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+
+.about1{
+    width: 80%;
+    margin: auto;
+    height: 44vh;
+    margin-top: 100px;
+    border-bottom:1px solid rgba(128, 128, 128, 0.4) ;
+    padding:30px;
+}
+
+.about1 h3{
+    text-align: center;
+    color: rgb(10, 78, 223);
+}
+
+.about1 h1{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.about1 p{
+    text-align: center;
+    margin-top: 25px;
+    color: grey;
+}
+
+.team-title{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.team-title p{
+    margin-top: 25px;
+    color: grey;
+}
+
+.team-member{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.team-member div{
+    width: 330px;
+    margin: 10px;
+}
+
+.member{
+    position: relative;
+    margin-left: 52px;
+    margin-top: 50px;
+    display: inline-block;
+    gap: 20px;
+}
+
+.member img{
+    width: 330px;
+    height: 430px;
+}
+.member-dis{
+    position: absolute;
+    content: "";
+    background-color: #ffffff77;
+    height: 90px;
+    overflow: hidden;
+    left: -10px;
+    margin-left: 30px;
+    box-shadow: 1px 3px 4px 2px rgba(0, 0, 0, 0.13);
+    bottom: 20px;
+    padding-top: 15px;
+    padding-left: 12px;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+.member-dis h1{
+    font-size: 30px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.member-dis i{
+    float: right;
+    margin-top: 1px;
+    margin-right: 10px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#one{
+    margin-right: 90px;
+}
+
+
+
+.member-dis h2{
+    font-size: 17px;
+    font-weight: normal;
+    margin-top: 15px;
+}
+
+#sub-dis{
+    margin-top: 15px;
+}
+
+.social-icons a{
+    float: left;
+    margin-left: -10px;
+    margin-right: 20px;
+    color: white;
+    margin-top: 30px;
+}
+
+.social-icons a:hover{
+    transition: all 0.6s ease;
+    color: rgb(10, 78, 223);
+}
+
+.member-dis:hover{
+    height: 250px;
+    transition: 0.6s ease;
+}
+
+@media (max-width:375px){
+    .about-title h1{
+        font-size: 30px;
+    }
+
+    .about-title h3{
+        font-size: 18px;
+    }
+
+    .about-title p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:480px){
+    .about-title h1{
+        font-size: 30px;
+    }
+
+    .about-title h3{
+        font-size: 18px;
+    }
+
+    .about-title p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:360px){
+    .about-title h1{
+        font-size: 24px;
+    }
+
+    .about-title h3{
+        font-size: 13px;
+    }
+
+    .about-title p{
+        font-size: 14px;
+    }
+}
+
+
+
+@media (max-width:259px){
+    .about-title h1{
+        font-size: 19px;
+    }
+
+    .about-title h3{
+        font-size: 9px;
+    }
+
+    .about-title p{
+        font-size: 7px;
+    }
+}
