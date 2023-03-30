@@ -1,0 +1,75 @@
+:root{
+  --color1: #ecfbfe;
+  --color2: #19a5b6;
+  --color3: #106872;
+  --color4: #0d585e;
+  --color5: #012e41;
+  --color6: #4fb9c7;
+}
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  text-transform: capitalize;
+  background-image:linear-gradient(#19a5b6,#ecfbfe);
+}
+.main{
+  display: flex;
+  margin:100px auto;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 440px;
+  padding:  20px;
+  align-items: center;
+  background-color: var(--color1);
+}
+.main .logo img{
+  width: 150px;
+  margin: 25px auto;
+}
+.main .logo{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.main h3{
+  margin: 50px auto;
+
+}
+.main .logo:hover{
+  background-color: var(--color5);
+  border-radius: 50px 0 50px;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+.main form .name{
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.form-control{
+  width: 95%;
+}
+.main form .choose{
+  display: flex;
+  justify-content: space-around;
+  margin-top: -7px;
+}
+.main form .button{
+  margin: 20px auto 10px;
+  width: 50%;
+  padding: 5px 0;
+  border-radius: 25px;
+  background-color: var(--color2);
+  font-size: 20px;
+  transition: 0.3s ease-in;
+}
+.main form .button:hover{
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  background-color: var(--color5);
+  color: white;
+}

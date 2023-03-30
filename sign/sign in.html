@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel = "icon" href ="./assets/image/webbrical.png" type = "image/x-icon">
+    <title>webbrical</title>
+  </head>
+  <body >
+    
+
+
+    <div class="main">
+      <div class="logo">
+        <img src="./assets/image/main-1.png" alt="">
+      </div>
+      <h3>sign in</h3>
+    
+      <form class="form" action="# " style="width: 90%;">
+        <div class="form-group" style="margin: 20px 0 ;">
+          <label for="gmail" type="text">gmail</label>
+          <input type="email" name="" id="email" placeholder="gmail" class="form-control" required>
+      </div>
+        <div class="form-group">
+          <label for=""> password</label>
+          <input type="password" name="" class="form-control" id="password"  placeholder=" password" required>
+        </div>
+        <button class="button choose"  type="submit" id="login" name="login">
+        sign in
+      </button>
+      </form>
+
+
+      
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script type="module">
+    
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+      import { getDatabase , set , ref , update } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js";
+      import { getAuth, createUserWithEmailAndPassword , signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js";
+
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyA9eRWAyBaeYxH-iFUaSA5aSzIULxy3K_U",
+        authDomain: "fir-31402.firebaseapp.com",
+        databaseURL: "https://fir-31402-default-rtdb.firebaseio.com",
+        projectId: "fir-31402",
+        storageBucket: "fir-31402.appspot.com",
+        messagingSenderId: "735900944470",
+        appId: "1:735900944470:web:9b365915561b5030d213f7"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const database = getDatabase(app);
+      const auth = getAuth();
+      // let singUp = document.getElementById('signUp')
+  //     singUp.addEventListener("click",(e)=>{
+
+
+  //       var username = document.getElementById("user").value ;
+  //       var email = document.getElementById("email").value ;
+  //       var password = document.getElementById("password").value ;
+
+
+  //       createUserWithEmailAndPassword(auth, email, password)
+  //   .then((userCredential) => {
+  //   // Signed in 
+  //   const user = userCredential.user;
+  //   alert('user created')
+  //   set(ref(database , 'users/' + user.uid),{
+  //     username : username ,
+  //     email : email
+  //   })
+
+  //   // ...
+
+  // })
+  // .catch((error) => {
+  //   const errorCode = error.code;
+  //   const errorMessage = error.message;
+  //   alert('error')
+  //   // ..
+  // });
+        
+
+  //     });
+
+
+
+      let login = document.getElementById("login");
+      console.log(login)
+      login.onclick =  (e) => {
+        alert('done')
+        var email = document.getElementById("email").value ;
+        var password = document.getElementById("password").value ;
+
+        signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    const dt = new Date();
+    update(ref(database , 'users/' + user.uid),{
+      last_login : dt ,
+    
+    })
+    alert('user loged in  ')
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorMessage)
+  });
+
+  window.location.replace(
+  "../index.html"
+);
+      }
+    </script>
+
+  </body>
+</html>
