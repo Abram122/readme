@@ -1,0 +1,30 @@
+body{
+    background-color: whitesmoke;
+    height: fit-content;
+}
+.sidenav{
+    overflow-y: scroll;
+    background-color: black;
+    display: flex;
+    flex-flow: column;
+    
+}
+.sidenav a{
+    color: white;
+    text-decoration: none;
+}
+.alink{
+    padding: 7px ;
+    border-radius: 10px 20px;
+    transition: 0.3s;
+
+}
+.sidenav .alink:hover{
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+.alink:hover a{
+    transition: 0.3s;
+    color: black;
+}

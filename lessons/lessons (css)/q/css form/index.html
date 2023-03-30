@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="sccore">
+        <h3 class="frist" id="frist">Correct Answer <br> <span id="x"></span></h3>
+        <h3>Uncorrect Answer <br> <span id="y"></span></h3>
+
+    </div>
+    <div class="container">
+        <!-- number1 -->
+
+        <div class="child title">1-Which is the correct CSS syntax?
+
+        </div>
+        <div class="child one" id="one">
+            <input type="radio" name="q1" value="" onclick="value = 'body {color: black;}'" id="ans1">
+            <label for=""> body {color: black;} &nbsp;</label>
+        </div>
+        <div class="child two" id="two">
+            <input type="radio" name="q1"value="" onclick="value = 'body:color=black;'" id="ans2">
+            <label for="">body:color=black; &nbsp;</label>
+        </div>
+        <div class="child two" id="three">
+            <input type="radio" name="q1"value="" onclick="value = '{body;color:black;}'" id="ans2">
+            <label for="">{body;color:black;} &nbsp;</label>
+        </div>
+
+        <!-- number2 -->
+
+        <div class="child title">2- Which property is used to change the background color?
+
+
+        </div>
+        <div class="child one" id="one3">
+            <input type="radio" name="q3" value="" onclick="value = 'bgcolor'" id="ans1-3">
+            <label for="">bgcolor &nbsp;</label>
+        </div>
+        <div class="child two" id="two3">
+            <input type="radio" name="q3"value="" onclick="value = 'color'" id="ans2-3">
+            <label for="">color &nbsp;</label>
+        </div>
+        <div class="child three" id="three3">
+            <input type="radio" name="q3"value="" onclick="value = 'backgroud-color'" id="ans3-3">
+            <label for="">backgroud-color &nbsp;</label>
+        </div>
+
+        <!-- number 3 -->
+
+        <div class="child title">3-How do you make the text bold?
+
+        </div>
+        <div class="child one" id="one4">
+            <input type="radio" name="q4" value="" onclick="value = 'font:bold;'" id="ans1-4">
+            <label for="">font:bold; &nbsp;</label>
+        </div>
+        <div class="child two" id="two4">
+            <input type="radio" name="q4"value="" onclick="value = 'style:bold;'" id="ans2-4">
+            <label for="">style:bold; &nbsp;</label>
+        </div>
+        <div class="child three" id="three4">
+            <input type="radio" name="q4"value="" onclick="value = 'font-weight:bold;'" id="ans3-4">
+            <label for="">font-weight:bold; &nbsp;</label>
+        </div>
+        <!-- number4 -->
+        
+        <div class="child title">4- How do you select an element with id 'demo'?    
+        </div>
+        <div class="child one" id="one5">
+            <input type="radio" name="q5" value="" onclick="value = 'cdemo'" id="ans1-5">
+            <label for=""> //demo &nbsp;</label>
+        </div>
+        <div class="child two" id="two5">
+            <input type="radio" name="q5"value="" onclick="value = '.demo'" id="ans2-5">
+            <label for="">.demo &nbsp;
+            </label>
+        </div>
+        <div class="child two" id="three5">
+            <input type="radio" name="q5"value="" onclick="value = '#demo'" id="ans3-5">
+            <label for="">#demo &nbsp;
+            </label>
+        </div>
+        <!-- number 5 -->
+        <div class="child title">5-How do you select elements with class name 'test'?
+
+        </div>
+        <div class="child one" id="one6">
+            <input type="radio" name="q6" value="" onclick="value = '*test'" id="ans1-6">
+            <label for="">*test</label>
+        </div>
+        <div class="child two" id="two6">
+            <input type="radio" name="q6"value="" onclick="value = '.test'" id="ans2-6">
+            <label for="">.test</label>
+        </div>
+        <div class="child three" id="three6">
+            <input type="radio" name="q6"value="" onclick="value = '#test'" id="ans3-6">
+            <label for="">#test</label>
+        </div>
+
+        <a href="#" class="btn" id="btn1">submit</a>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 2</title>
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="demo lessons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-lg-2 col-sm-4  col-5  sidenav  text-center ">
+                <div class="">
+                    <img src="../../assets/images/logo black.jpeg" alt="" class="img-fluid rounded-pill" style="height: 150px;">
+                </div>
+                <div class="alink mt-3">
+                    <a href="../web/web spec.html">Html</a>
+                </div>
+                <div class="alink mt-3">
+                    <a href="./demo lessons 1.html">lesson 1</a>
+                </div>
+                <div class="alink mt-3">
+                    <a href="./demo lessons 2.html">lesson 2</a>
+                </div>
+                <div class="alink mt-3">
+                    <a href="./demo lessons 3.html">lesson 3</a>
+                </div>
+                <div class="alink mt-3">
+                    <a href="./demo lessons 4.html">lesson 4</a>
+                </div>
+                <div class="alink mt-3">
+                    <a href="./demo lessons 5.html">lesson 5</a>
+                </div>
+                <div class="alink mt-3">
+                    <a href="q/html form/index.html">Check your understand </a>
+                </div>                
+            </div>
+            <div class="col-md-8 col-sm-8 col-lg-10 col-7 ">
+                <h3 style="color: lightskyblue;">Create HTML files, edit web pages and tags</h3>
+                <h5>
+
+                    <span style="color: red;">1. Fundamentals of HTML and XHTML</span>
+                    HTML is the standard markup language for creating web pages. <br>
+                    It consists of a series of elements. <br>
+                    HTML is web design language and not programming language. <br>
+                    Hypertext Markup Language (HTML) documents use the .html or .htm extension. <br>
+                    This extension allows a web browser or device such as a smartphone to understand <br>
+                    that HTML content is on the page, and the content of the page is then rendered <br>
+                    by the browser or deviceaccording to the rules of HTML. <br>
+                    There is little fundamental difference between HTML and XHTML <br>
+                    (EXtensible HyperText Markup Language) <br>
+                    the two standards previously released by the W3C (World Wide Web Consortium). <br>
+                    As XHTML was defined, it was created so that pages written in XHTML <br>
+                    also work in browsers that render current HTML. <br>
+                    The tags and attributes of XHTML and HTML remained the same, <br>
+                    but thesyntax of XHTML code is more strict. <br>
+                    The most significant differences between XHTML and HTML are as follows: <br>
+                    In XHTML, all tags must be lowercase. <br>
+                    XHTML requires all tags to be closed <br>
+                    meaning that there must be a tag at the startand end of the element being tagged <br><br>
+
+                    <span style="color: red;">1.1. HTML elements</span>
+                    HTML consists of three main things: Tags , elements and attributes. <br>
+                    Markup tags are used to define the content on an HTML page. <br>
+                    Markup tags are contained between greater than (<) and less than (>) symbols, <br>
+                    and they are placed at the start and end of an object <br>
+                    or text that is used in an HTML page. <br>
+                    Here is an example of two heading 1 tags for text. <br>
+                    The tags are not seen by the viewer of the web page, <br>
+                    but every web browser knows that the text between the tags is a heading 1. <br>
+                    <!-- <h1>New Smoothie Recipe!</h1> -->
+                    In this example,the 
+                    <!-- <h1> is the opening tag and the </h1> -->
+                    is the closing tag. <br>
+                    So this entire line of code is an element. <br>
+                    More specifically, it is referred to as the heading 1 element. <br>
+                    One of the most important concepts to understand when designing web <br>
+                    content is the nested structure of HTML documents. <br>
+                    Elements are often nested within each other. <br><br>
+
+                    <span style="color: red;">1.1.1.Tags</span>
+                    Any HTML code is written between a start tag and an end tag. For example, <br>
+                    <!-- <html> and </html>. Here <html> is the start tag while </html> is the end tag. -->
+                    Notice that there are some tags do not need to be closed. <br>
+                    We have five main tags which are: <br>
+                    <ol>
+                        <li>
+                            <span style="color: red;">DOCTYPE tag:</span> 
+                            Declaration for the document type to the browser written once at the top of the html document 
+                            <!-- <!DOCTYPE html>  -->
+                        </li>
+                        <li>
+                            <span style="color: red;">HTML tag:</span>
+                            All the html document is written inside this html tag 
+                            <!-- <html></html> --> 
+                        </li>
+                        <li>
+                            <span style="color: red;">Head tag:</span>
+                            The title part is written inside this head tag <br>
+                            <!-- <head></head> --> 
+                            Information about metadata (which are instructions to the browser on how to deal with the page)
+                        </li>
+                        <li>
+                            <span style="color: red;">Title tag:</span>
+                            The page title is written inside this title tag
+                            <!-- <title></title> --> 
+                        </li>
+                        <li>
+                            <span style="color: red;">Body tag:</span>
+                            The page content is writer inside this body tag
+                            <!-- <body></body> -->
+                        </li>
+                    </ol><br>
+
+                    <span style="color: red;">1.1.2.Headings</span>
+                    HTML headings (notice not heads) are the titles or subtitles in the page. <br>
+                    It is composed of 6 levels starting from h1-----h6, where h1 is the largest. <br><br>
+
+                    <span style="color: red;">1.1.3.Paragraphs</span>
+                    To write a full paragraph in an HTML page we can not just hit enter and start typing <br>
+                    because according to the syntax rules the browser will ignore the spaces and display <br>
+                    the text in one line. <br>
+                    In order to have a full paragraph in an HTML page we use
+                    <!-- <p> </p>  -->
+                    tags <br><br>
+
+                    <span style="color: red;">1.1.4.Comments</span>
+                    HTML comments are ignored by the browser. It is important for the developer of the web page. <br>
+                    To include a comment sentence, we shall use the following code <br><br>
+
+                    <span style="color: red;">1.1.5.Text formatting</span>
+                    Text formatting tags are helpful to define bold, italic, highlight text etc. <br>
+                    For example: <br>
+                    • Bold text : 
+                    <!-- <b> </b>  --> 
+                    <br>
+                    • Italic text :
+                    <!-- <i> </i> -->
+                    <br>
+                    • Highlight text :
+                    <!-- <mark> </mark> -->
+                    <br>
+                    • Quote text :
+                    <!-- <q> </q> -->
+                    <br>
+
+                    Applying these tags on our code and notice the output. <br><br>
+
+                    <span style="color: red;">1.2. HTML Attributes</span>
+                    They are special words used to control the elements behavior. They are divided into <br>
+                    two parts global attribute can be used with any elements and element attribute like <br>
+                    (images, audio and video, hyper links) <br> <br>
+
+                    <span style="color: red;">1.2.1.Global attribute</span>
+                    In the previous code, imagine we have many paragraphs and we need to format them <br>
+                    separately using CSS (will be mentioned later in the lesson). <br>
+                    We have to separate them with an attribute named class. This attribute can be applied <br>
+                    either in the body <br>
+                    Notice here using the attribute named class and giving a value of one or two or three, <br>
+                    this is a global attribute as we can use it either in body or title. <br>
+                    Another global attribute called “hidden” we use it to hide a part in a paragraph. <br><br>
+
+                    <span style="color: red;">1.2.2.Element Attribute</span>
+                    For each specific element (image, video, audio, or link) it has its own attributes. <br>
+                    Let’s navigate through those elements and check their own attributes. <br> <br>
+
+                    <span style="color: red;">1.2.2.1. HTML Links</span>
+                    Any website is a group of pages linked together. It is defined between
+                    <!-- <a> </a> --> 
+                    <br><br>
+
+                    <span style="color: red;">1.2.2.2. HTML Images</span>
+                    To add an image to the webpage we use the image tag <!-- <img> --> and this tag will have <br>
+                    two attributes one is called source src = “ ” and alternate alt = “ ”. <br>
+                    The source attribute is used to identify the place of the image either it is locally on <br>
+                    your pc or in another webpage. While the alternate attribute is used in case the image <br>
+                    is not available the text will be placed instead. <br><br>
+
+
+                    <span style="color: red;">1.2.2.3. HTML Audio</span>
+                    This element 
+                    <!-- <audio> -->
+                    is used to add an audio file to your webpage, as mentioned with <br>
+                    the image element it has also source attribute and type attribute. <br>
+                    Another attributes can be added to the audio element like controls <br>
+                    <!-- <audio controls > </audio> -->
+                    in order to display the controls of the audio file. Also, the autoplay attribute <br>
+                    <!-- <audio controls autoplay> -->
+                    used to start the file automatically <br><br>
+
+                    <span style="color: red;">1.2.2.4. HTML Video</span>
+                    This element 
+                    <!-- <video> -->
+                    is used to add a video file to your webpage <br>
+                    as mentioned with the image element it has also source attribute and type attribute. <br>
+                    as mentioned with the image element it has also source attribute and type attribute. <br>
+                    MIME type of the file. <br>
+                    The main difference with the audio element is that we can add width and height <br>
+                    attributes to the elements in order to control the size of the displayed video. <br><br>
+
+                    <span style="color: red;">1.3. HTML Tables</span>
+                    Tables are used in a webpage to show a certain data. To display a table <br>
+                    in a webpage we use the tag table 
+                    <!-- <table> </table> -->, <br>
+                    Each row is defined with
+                    <!-- <tr></tr>  -->
+                    tag, <br>
+                    each column is defined with 
+                    <!-- <th></th> -->
+                    tag <br>
+                    and each cell is defined with 
+                    <!-- <td></td> -->
+                    tag <br>
+                </h5>
+                <div class="text-center mt-4">
+                    <a href="../IDLE/idle.html"><button class="btn btn-primary">Try it by your self !</button></a>
+            </div>
+                <center>
+                    <a href="https://drive.google.com/file/d/1W5cQRiSnHqKHcrByXhtGcTRde5qEgx_e/view?usp=share_link">
+                        <button class="button-pdf mb-4 mt-4">show pdf</button>
+                    </a>
+                </center>
+                    <div class="custom-btn text-center ">
+                        <a href="./demo lessons 1.html">
+                        <button class="btn btn-dark">
+                            <i class="bi bi-arrow-left fs-6"></i>
+                        </button>
+                    </a>
+                    <a href="./demo lessons 3.html">
+                        <button class="btn btn-dark">
+                            <i class="bi bi-arrow-right fs-6"></i>
+                        </button>
+                    </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

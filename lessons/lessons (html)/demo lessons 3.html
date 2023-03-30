@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 3</title>
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="demo lessons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-lg-2 col-sm-4  col-5  sidenav  text-center ">
+                <div class="">
+                    <img src="../../assets/images/logo black.jpeg" alt="" class="img-fluid rounded-pill" style="height: 150px;">
+                </div>
+                <div class="alink mt-3">
+                    <a href="../web/web spec.html">Html</a>
+                </div>
+                <div class="alink mt-3">
+                    <a href="./demo lessons 1.html">lesson 1</a>
+                </div>
+                <div class="alink mt-3">
+                    <a href="./demo lessons 2.html">lesson 2</a>
+                </div>
+                <div class="alink mt-3">
+                    <a href="./demo lessons 3.html">lesson 3</a>
+                </div>
+                <div class="alink mt-3">
+                    <a href="./demo lessons 4.html">lesson 4</a>
+                </div>
+                <div class="alink mt-3">
+                    <a href="./demo lessons 5.html">lesson 5</a>
+                </div>         
+                <div class="alink mt-3">
+                    <a href="q/html form/index.html">Check your understand </a>
+                </div>       
+            </div>
+            <div class="col-md-8 col-sm-8 col-lg-10 col-7 ">
+                <h3 style="color: lightskyblue;">Styling with CSS</h3>
+                <h3 style="color: lightskyblue;">1. Introduction to CSS</h3>
+                <h5>
+                    CSS can style almost any HTML tag that creates a visible element on the page, <br>
+                    including all the HTML tags used to create headings, paragraphs, links, <br>
+                    images, lists, and tables t. Specifically, CSS allows you to style: <br>
+                    - Text size, color, style, typeface, and alignment. <br>
+                    - Link color and style. <br>
+                    - Image size and alignment. <br>
+                    - List bullet styles and indentation. <br>
+                    - Table size, shading, borders, and alignment. <br>
+                    CSS was created four years after HTML as an experiment <br>
+                    to see whether developers and consumers wanted extra styling effects. <br>
+                    let’s find out the syntax of a CSS code : <br>
+                    - The selector points to the HTML element you want to style. <br>
+                    - The declaration block contains one or more declarations separated by
+                    semicolons. <br>
+                    - Each declaration includes a CSS property name and a value, <br>
+                    separated by a colon. <br>
+                    - Multiple CSS declarations are separated with semicolons, <br>
+                    and declaration blocks are surrounded by curly braces. <br>
+                    You can add a CSS file to your html documents by one of three ways: <br>
+                    external, internal, or inline. <br><br>
+                </h5>
+                <h3 style="color: lightskyblue;">2. CSS Element Styling</h3>
+                <h5>
+                    look in pdf for code <br><br>
+                </h5>
+                <h3 style="color: lightskyblue;">3. CSS Background</h3>
+                <h5>
+                    A background can be either a color or just an image, <br>
+                    let’s discover both of them and how to add them to our webpage. <br>
+
+                    <span style="color: red;">3.1. Background-color:</span>
+                    This function is used to set a specific background to your <br>
+                    webpage or even a specific paragraph in the webpage. <br>
+                    Do we have to memorize all the colors name while choosing a background color? <br>
+                    answer is no, <br>
+                    any color composed of the three main colors red, green and blue RGB <br>
+                    and their values varies from 0 up to 255, <br>
+                    and to get black color we set the three colors values to 0,0,0 <br>
+                    while getting the white color the values become 255,255,255. <br>
+                    look in pdf for code <br> <br>
+                    
+                    <span style="color: red;">3.2. Background-image:</span>
+                    we have an image and we want to added it as a background to our paragraph. <br>
+                    As was mentioned before in the html image we have to specify the <br>
+                    place of the image before typing the code. <br>
+                    .p {background-image : url(“logo.jpg”) } <br><br>
+                </h5>
+                <h3 style="color: lightskyblue;">4. Padding</h3>
+                <h5>
+                    Padding is used to create space around an element’s content, <br>
+                    inside of any defined borders. <br> 
+                    With CSS, you have full control over the padding. <br>
+                    There are properties for setting the padding for each side of an element <br>
+                    (top, right, bottom, and left) the sides are determined clockwise <br>
+                    Padding: top right bottom left <br>
+                </h5>
+                <h3 style="color: lightskyblue;">5. CSS Margins</h3>
+                <h5>
+                    CSS has properties for specifying the margin for each side of an element: <br>
+                    margin-top <br>
+                    margin-right <br>
+                    margin-bottom <br>
+                    margin-left <br>
+                    All the margin properties can have the following values: <br>
+                    <ul>
+                        <li>auto - the browser calculates the margin</li>
+                        <li>length - specifies a margin in px, pt, cm, etc.</li>
+                        <li>% - specifies a margin in % of the width of the containing element</li>
+                        <li>inherit - specifies that the margin should be inherited from the parent
+                            element</li>
+                    </ul>
+                    Notice that negative values are allowed. <br>
+                    It is important to identify the differences between Padding and Margin. <br><br>
+                </h5>
+                <h3 style="color: lightskyblue;">6. CSS Border</h3>
+                <h5>
+                    The CSS border properties allow you to specify the style, <br>
+                    width, and color of an element's border. <br>
+                    None of the OTHER CSS border properties (width and color) <br>
+                    will have ANY effect unless the border-style property is set. <br>
+                    <span style="color: red;">6.1. CSS Border Style</span>
+                    The border-style property specifies what kind of border to display. <br>
+                    The following values are allowed: <br>
+                    <ul>
+                        <li>dotted - Defines a dotted border</li>
+                        <li>dashed - Defines a dashed border</li>
+                        <li>solid - Defines a solid border</li>
+                        <li>double - Defines a double border</li>
+                        <li>groove - Defines a 3D grooved border. The effect depends on the border-color
+                            value</li>
+                        <li>ridge - Defines a 3D ridged border. The effect depends on the border-color
+                            value</li>
+                        <li>inset - Defines a 3D inset border. The effect depends on the border-color value</li>
+                        <li>outset - Defines a 3D outset border. The effect depends on the border-color
+                            value</li>
+                        <li>none - Defines no border</li>
+                        <li>hidden - Defines a hidden border</li>
+                    </ul>
+                    The border-style property can have from one to four values <br>
+                    (for the top border, right border, bottom border, and the left border) <br><br>
+                    <span style="color: red;">6.2. CSS Border width</span>
+                    The border-width property specifies the width of the four borders. <br>
+                    The width can be set as a specific size (in px, pt, cm, em, etc) <br>
+                    or by using one of the three predefined values: thin, medium, or thick <br> <br>
+                    <span style="color: red;">6.3. CSS Border color</span>
+                    The border-color property specifies the set of the color of the four borders. <br>
+                    The color can be set by name or RGB values as discussed before. <br> <br>
+                    <span style="color: red;">6.4. CSS Rounded Border</span>
+                    The border-radius is a property to add a rounded border to the element. <br>
+                    The round shape of the border can be identified by setting the radius value. <br>
+                    The higher value the roundest border will be. <br>
+                    
+                    
+                    
+                </h5>
+                <div class="text-center mt-4">
+                    <a href="../IDLE/idle.html"><button class="btn btn-primary">Try it by your self !</button></a>
+            </div>
+                <center>
+                    <a href="https://drive.google.com/file/d/1FhOXLsUdtsYh7i9nqcUuhqKgT3fU_Dgx/view?usp=share_link">
+                        <button class="button-pdf mb-4 mt-4">show pdf</button>
+                    </a>
+                </center>
+                <div class="custom-btn text-center ">
+                    <a href="./demo lessons 2.html">
+                    <button class="btn btn-dark">
+                        <i class="bi bi-arrow-left fs-6"></i>
+                    </button>
+                </a>
+                <a href="./demo lessons 4.html">
+                    <button class="btn btn-dark">
+                        <i class="bi bi-arrow-right fs-6"></i>
+                    </button>
+                </a>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

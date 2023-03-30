@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 4</title>
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="demo lessons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-lg-2 col-sm-4  col-5  sidenav  text-center ">
+                <div class="">
+                    <img src="../../assets/images/logo black.jpeg" alt="" class="img-fluid rounded-pill" style="height: 150px;">
+                </div>
+                <div class="alink mt-3">
+                    <a href="../web/web spec.html">Html</a>
+                </div>
+                <div class="alink mt-3">
+                    <a href="./demo lessons 1.html">lesson 1</a>
+                </div>
+                <div class="alink mt-3">
+                    <a href="./demo lessons 2.html">lesson 2</a>
+                </div>
+                <div class="alink mt-3">
+                    <a href="./demo lessons 3.html">lesson 3</a>
+                </div>
+                <div class="alink mt-3">
+                    <a href="./demo lessons 4.html">lesson 4</a>
+                </div>
+                <div class="alink mt-3">
+                    <a href="./demo lessons 5.html">lesson 5</a>
+                </div>          
+                <div class="alink mt-3">
+                    <a href="q/html form/index.html">Check your understand </a>
+                </div>      
+            </div>
+            <div class="col-md-8 col-sm-8 col-lg-10 col-7 ">
+                <h3 style="color: lightskyblue;">Using Developer tools to inspect</h3><br>
+                <h3 style="color: lightskyblue;">1. CSS Gradients</h3>
+                <h5>
+                    The gradients feature allows you to display a smooth transition between two or more colors. <br>
+                    Gradients is divided into 3 types (linear – radial – conic) . <br>
+                    <span style="color: red;">1.1. Linear Gradient</span>
+                    It goes down/up/left/right/diagonally. <br>
+                    To create it you must define at least two colors stops <br>
+                    and before defining the colors we have to define the direction. <br>
+                    The default direction of the linear gradient is top to bottom. <br>
+                    background-image: linear-gradient(to right, red, yellow); <br><br>
+                    <span style="color: red;">1.2. Radial Gradients</span>
+                    A radial gradient is defined by its center. <br>
+                    By default, shape is ellipse, size is farthest-corner, and position is center. <br>
+                    background-image: radial-gradient(red , blue); <br><br>
+                    <span style="color: red;">1.3. Conic Gradient</span>
+                    A conic gradient is a gradient with color transitions rotated around a center point. <br>
+                    To create a conic gradient, you must define at least two colors. <br>
+                    By default, angle is 0deg and position is center. <br>
+                    If no degree is specified, the colors will be spread equally around the center point. <br><br>
+                </h5>
+                <h3 style="color: lightskyblue;">2. Button</h3>
+                <h5>
+                    Buttons are used in the webpage for many reasons. <br>
+                    to open another webpage, download data or submit applications. <br>
+                    Using the CSS we can add some styles to our button like color, size, shape, width,button group. <br> <br>
+                    <span style="color: red;">2.1. Button Color and Size</span>
+                    Use the background-color property to change the background color of a button also <br>
+                    Use the font-size property to change the font size of a button. Notice this code <br>
+                    <span style="color: red;">2.2. Button Shape and Width</span>
+                    Use the border-radius property to add rounded corners to a button. <br>
+                    By default, the size of the button is determined by its text content (as wide as its content). <br>
+                    Use the width property to change the width of a button. <br> <br>
+                    <span style="color: red;">2.3. Button Group</span>
+                    Imagine repeating the HTML code in page 36 to create 4 buttons, we can display those <br>
+                    buttons either vertical (using display block) or horizontal (using float – left ) <br><br>
+                </h5>
+                <h3 style="color: lightskyblue;">3. CSS Text Effects</h3>
+                <h5>
+                    <span style="color: red;">3.1. CSS Writing mode</span>
+                    The CSS writing-mode property specifies whether lines of text are laid out <br>
+                    horizontally or vertically. Some text with a span element with a vertical-writing-mode. <br>
+                    The following example shows some different writing modes <br>
+                    Notice here the writing mode was vertical- rl (right to left), <br>
+                    you can also use the other direction lr (left to right)<br><br>
+                    <span style="color: red;">3.2. CSS text warping</span>
+                    The CSS word-wrap property allows long words to be able to be broken and wrap onto <br>
+                    the next line. The word-wrap property allows you to force the text to wrap <br>
+                    even if it means splitting it in the middle of a word <br><br>
+                    <span style="color: red;">3.3. CSS Word Break</span>
+                    The CSS word-break property specifies line breaking rules. <br><br>
+                </h5>
+                <h3 style="color: lightskyblue;">4. CSS User Interface</h3>
+                <h5>
+                    In the user interface it is important to specify whether or not an element is resizable by the user. <br><br>
+                </h5>
+                <h3 style="color: lightskyblue;">5. CSS Box Model</h3>
+                <h5>
+                    In CSS, the term "box model" is used when talking about design and layout. <br>
+                    The CSS box model is essentially a box that wraps around every HTML element. <br>
+                    It consists of: margins, borders, padding, and the actual content. <br>
+                    - Content - The content of the box, where text and images appear <br>
+                    - Padding - Clears an area around the content. The padding is transparent <br>
+                    - Border - A border that goes around the padding and content <br>
+                    - Margin - Clears an area outside the border. The margin is transparent <br>
+                    The box model allows us to add a border around elements, <br>
+                    and to define space between elements. <br>
+                </h5>
+                <div class="text-center mt-4">
+                    <a href="../IDLE/idle.html"><button class="btn btn-primary">Try it by your self !</button></a>
+            </div>
+                <center>
+                    <a href="https://drive.google.com/file/d/1FhOXLsUdtsYh7i9nqcUuhqKgT3fU_Dgx/view?usp=share_link">
+                        <button class="button-pdf mb-4 mt-4">show pdf</button>
+                    </a>
+                </center>
+                <div class="custom-btn text-center ">
+                        <a href="./demo lessons 3.html">
+                        <button class="btn btn-dark">
+                            <i class="bi bi-arrow-left fs-6"></i>
+                        </button>
+                    </a>
+                    <a href="./demo lessons 5.html">
+                        <button class="btn btn-dark">
+                            <i class="bi bi-arrow-right fs-6"></i>
+                        </button>
+                    </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
